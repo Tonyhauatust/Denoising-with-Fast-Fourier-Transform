@@ -10,6 +10,10 @@ Data points are usually taken discretely by input devices. For example, in the f
 
 For <img src="https://latex.codecogs.com/svg.image?n" title="n" /> data points <img src="https://latex.codecogs.com/svg.image?\left\[&space;f_0,&space;f_1,&space;f_2,&space;...,&space;f_n\right]" title="\left\[ f_0, f_1, f_2, ..., f_n\right]" /> in time domain, we can transform them into frequency domain <img src="https://latex.codecogs.com/svg.image?\left\[&space;\hat&space;f_0,&space;\hat&space;f_1,&space;\hat&space;f_2,&space;...,&space;\hat&space;f_n\right]" title="\left\[ \hat f_0, \hat f_1, \hat f_2, ..., \hat f_n\right]" />, whose frequency ranges from 0 to <img src="https://latex.codecogs.com/svg.image?n" title="n" />. The Fourier Transform involved is no longer an integral form as stated above, because <img src="https://latex.codecogs.com/svg.image?g(\alpha)" title="g(\alpha)" /> is no longer a continuous function but instead discrete sampling points. For each <img src="https://latex.codecogs.com/svg.image?\hat&space;f_k" title="\hat f_k" />, it can be found by the formula <img src="https://latex.codecogs.com/svg.image?\hat&space;f_k&space;=&space;f_0&space;e^{i&space;2\pi&space;0&space;k/n}&space;&plus;&space;f_1&space;e^{i&space;2\pi&space;1&space;k/n}&space;&plus;&space;f_2&space;e^{i&space;2\pi&space;2&space;k/n}&space;&plus;&space;...&space;&plus;&space;f_n&space;e^{i&space;2\pi&space;n&space;k/n}&space;" title="\hat f_k = f_0 e^{i 2\pi 0 k/n} + f_1 e^{i 2\pi 1 k/n} + f_2 e^{i 2\pi 2 k/n} + ... + f_n e^{i 2\pi n k/n} " />. This is called Discrete Fourier Transform. However, this formula is memory costing for computers and is replaced by a more efficient algorithm called Fast Fourier Transform. It can be easily applied by numpy.fft.fft. The inverse is applied by np.fft.ifft.
 
+## References
+
+1. Presentation on mathematical representation of waves https://slideplayer.com/slide/4178862/
+
 
 
 
